@@ -1,0 +1,116 @@
+section {
+  color: hsl(0, 0%, 95%);
+  width: 810px;
+  height: 400px;
+  margin: 50% auto;
+  display: flex;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  position: relative;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sedan {
+  height: 360px;
+  width: 230px;
+  display: inline-block;
+  background-color: hsl(31, 77%, 52%);
+  padding: 30px;
+  border-radius: 8px 0 0 8px;
+}
+.suv {
+  height: 360px;
+  width: 230px;
+  display: inline-block;
+  background-color: hsl(184, 100%, 22%);
+  padding: 30px;
+}
+.luxury {
+  height: 360px;
+  width: 230px;
+  display: inline-block;
+  background-color: hsl(179, 100%, 13%);
+  padding: 30px;
+  border-radius: 0 8px 8px 0;
+}
+
+.learn {
+  padding: 8px 16px 8px 16px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+}
+div p {
+  color: hsla(0, 0%, 95%);
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+}
+.sedan a {
+  color: hsl(31, 77%, 52%);
+}
+.suv a {
+  color: hsl(184, 100%, 22%);
+}
+.luxury a {
+  color: hsl(179, 100%, 13%);
+}
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.sedan .learn:hover {
+  background-color: hsl(31, 77%, 52%);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 100%, 0.75);
+}
+
+.suv .learn:hover {
+  background-color: hsl(184, 100%, 22%);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 100%, 0.75);
+}
+
+.luxury .learn:hover {
+  background-color: hsl(179, 100%, 13%);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+  color: hsl(0, 0%, 100%, 0.75);
+}
+/**************** For Mobile Phones*******************/
+
+@media (max-width: 800px) {
+  section {
+    display: block;
+    margin: 50% auto;
+  }
+  .sedan {
+    display: block;
+    margin: auto;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+    margin-top: 50%;
+  }
+  .suv {
+    display: block;
+    margin: auto;
+    height: 300px;
+    margin:auto;
+  }
+  .luxury {
+    display: block;
+    margin: auto;
+    height: 300px;
+    border-radius: 0 0 10px 10px;
+    margin:auto;
+  }
+  .learn {
+    position: relative;
+    top: 5px;
+    height: 300px;
+  }
+}
