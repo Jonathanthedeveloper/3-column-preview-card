@@ -1,14 +1,13 @@
 section {
   color: hsl(0, 0%, 95%);
   width: 810px;
-  height: 400px;
-  margin: 50% auto;
+  height: auto;
+  margin: auto;
   display: flex;
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   position: relative;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  margin-top: 50%;
 }
 
 .sedan {
@@ -83,34 +82,43 @@ h1 {
 }
 /**************** For Mobile Phones*******************/
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   section {
     display: block;
-    margin: 50% auto;
+    margin: auto;
+    width: max-content;
+    height: max-content;
   }
   .sedan {
     display: block;
     margin: auto;
     height: 300px;
     border-radius: 10px 10px 0 0;
-    margin-top: 50%;
   }
   .suv {
     display: block;
     margin: auto;
     height: 300px;
-    margin:auto;
+    margin: auto;
   }
   .luxury {
     display: block;
     margin: auto;
     height: 300px;
     border-radius: 0 0 10px 10px;
-    margin:auto;
+    margin: auto;
   }
   .learn {
     position: relative;
     top: 5px;
     height: 300px;
+  }
+  .footer {
+    font-size: 12px;
+    width: fit-content;
+  }
+  .footer p {
+    width: 800px;
+    margin: auto;
   }
 }
