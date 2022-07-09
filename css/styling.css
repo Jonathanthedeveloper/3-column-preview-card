@@ -1,7 +1,7 @@
 section {
   color: hsl(0, 0%, 95%);
   width: 810px;
-  height: auto;
+  height: max-content;
   margin: auto;
   display: flex;
   font-family: "Lexend Deca", sans-serif;
@@ -94,12 +94,15 @@ h1 {
     margin: auto;
     height: 300px;
     border-radius: 10px 10px 0 0;
+    max-width: max-content;
   }
   .suv {
     display: block;
     margin: auto;
     height: 300px;
     margin: auto;
+    max-width: max-content;
+
   }
   .luxury {
     display: block;
@@ -107,6 +110,8 @@ h1 {
     height: 300px;
     border-radius: 0 0 10px 10px;
     margin: auto;
+    max-width: max-content;
+    
   }
   .learn {
     position: relative;
@@ -120,5 +125,9 @@ h1 {
   .footer p {
     width: 800px;
     margin: auto;
+    text-align: center;
+  }
+  body {
+    width: min-content;
   }
 }
